@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Autour+One');
+@import url('https://fonts.googleapis.com/css?family=Autour+One');
 @import url('https://fonts.googleapis.com/css?family=Philosopher:400,700,700italic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -15,13 +15,13 @@
 
 /*
 Theme Name: Superb Lite
-Theme URI: http://ideaboxthemes.com/themes/superb-wordpress-theme/
+Theme URI: https://ideaboxthemes.com/themes/superb-wordpress-theme/
 Author: IdeaBox Themes
-Author URI: http://ideaboxthemes.com/
+Author URI: https://ideaboxthemes.com/
 Description: Superb is a mobile responsive WordPress theme with beautiful design and easy to use Theme options. Superb is a perfect fit for all kind of business and personal websites. It comes with multiple color schemes, built in social icons, a well laid out static front page design and live customization with Theme Customizer. Superb has built in styling for WooCommerce so you can start selling your products easily. 
 Version: 1.0.3
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blue, orange, brown, red, pink, purple, yellow, green, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Text Domain: superb
 
@@ -39,7 +39,7 @@ a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bo
    Default stylings from HTML5 Boilerplate
    ========================================================================== */
 
-/* Apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* Apply a natural box layout model to all elements - https://paulirish.com/2012/box-sizing-border-box-ftw/ */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 p{
     font-size: 1.1rem;
