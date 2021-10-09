@@ -1484,16 +1484,16 @@
 							<div id="content" style="padding: 10px; border: 1px solid #4cace4; border-radius: 8px;">
 								<h1 class="headingso">Contact Form</h1>
 
-								<form>
-									<input style="width: 49%; margin: 10px 0; " type="text" placeholder="Full Name">
-									<input style="width: 49%; margin: 10px 0;" type="text" placeholder="Email">
-									<input style="width: 49%; margin: 10px 0;" type="tel" placeholder="Phone Number">
-									<input style="width: 49%; margin: 10px 0;" type="tel" placeholder="Whatsapp Number">
-									<input type="text" style="width:99%; margin: 10px 0;" placeholder="Subject">
+								<form name="contact" method="POST" data-netify="true">
+									<input style="width: 49%; margin: 10px 0; " type="text" name="name" placeholder="Full Name">
+									<input style="width: 49%; margin: 10px 0;" type="text" name="email" placeholder="Email">
+									<input style="width: 49%; margin: 10px 0;" type="tel" name="phone" placeholder="Phone Number">
+									<input style="width: 49%; margin: 10px 0;" type="tel" name="whatsapp" placeholder="Whatsapp Number">
+									<input type="text" style="width:99%; margin: 10px 0;" name="subject" placeholder="Subject">
 									<textarea name="Contact" id="" style="width: 99%; margin: 10px 0;" rows="5"
-										cols="10" placeholder="Start Typing here"></textarea>
+										cols="10" placeholder="Start Typing here" name="message"></textarea>
 									<br>
-									<button style="background-color: #4cace4; color: white;">Submit</button>
+									<button type="submit" style="background-color: #4cace4; color: white;">Submit</button>
 								</form>
 							</div>
 
