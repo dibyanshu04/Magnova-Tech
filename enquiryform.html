@@ -1222,7 +1222,7 @@
 
     <body>
         <div class="testbox">
-            <form method="dialog">
+            <form name="Enquiry" method="POST" netlify>
 
                 <div class="banner">
                     <h1>Course Enquiry Form</h1>
@@ -1233,18 +1233,18 @@
                 <div class="item">
                     <p>Name<span class="required">*</span></p>
                     <div class="name-item">
-                        <input type="text" name="name" id="fname" placeholder="First" required />
-                        <input type="text" name="name" id="lname" placeholder="Last" required />
+                        <input type="text" name="first_name" id="fname" placeholder="First" required />
+                        <input type="text" name="last_name" id="lname" placeholder="Last" required />
                     </div>
                 </div>
                 <div class="contact-item">
                     <div class="item">
                         <p>Email<span class="required">*</span></p>
-                        <input type="text" name="name" id="email" required />
+                        <input type="text" name="email" id="email" required />
                     </div>
                     <div class="item">
                         <p>Phone<span class="required">*</span></p>
-                        <input type="text" name="name" id="phone" required />
+                        <input type="text" name="phone" id="phone" required />
                     </div>
                 </div>
                 <!-- <div class="position-item">
@@ -1262,7 +1262,15 @@
                 <div class="question">
                     <p>Which Course You are interseted?<span class="required">*</span></p>
                     <div class="question-answer">
-                        <div>
+                        <select name="course[]" multiple>
+                            <option value="MAGNOVA CERTIFIED HVAC ENGINEER">MAGNOVA CERTIFIED HVAC ENGINEER</option>
+                            <option value="MAGNOVA CERTIFIED IBMS ENGINEER">MAGNOVA CERTIFIED IBMS ENGINEER</option>
+                            <option value="MAGNOVA CERTIFIED CYBERSECURITY ENGINEER">MAGNOVA CERTIFIED CYBERSECURITY ENGINEER</option>
+                            <option value="MAGNOVA CERTIFIED TELECOM INFRASTRUCTURE ENGINEER(MCTIE)">MAGNOVA CERTIFIED TELECOM INFRASTRUCTURE ENGINEER(MCTIE)</option>
+                            <option value="MAGNOVA CERTIFIED NETWORK ENGINEER (MCNE)">MAGNOVA CERTIFIED NETWORK ENGINEER (MCNE)</option>
+                            <option value="MAGNOVA CERTIFIED AUTOCAD ENGINEER (MCAE)">MAGNOVA CERTIFIED AUTOCAD ENGINEER (MCAE)</option>
+                        </select>
+                        <!-- <div>
                             <input type="checkbox" value="MAGNOVA CERTIFIED HVAC ENGINEER" id="radio_1" />
 
                             <label for="radio_1" class="radio"><span>MAGNOVA CERTIFIED HVAC ENGINEER.</span></label>
@@ -1297,21 +1305,21 @@
 
                             <label for="radio_6" class="radio"><span>MAGNOVA CERTIFIED AUTOCAD ENGINEER
                                     (MCAE)</span></label>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <div class="item">
                     <p>Any Other Query</p>
                     <div class="name-item">
-                        <input name="" id="message" style="width: 100%;" rows="2">
+                        <input name="message" id="message" style="width: 100%;" rows="2">
 
                     </div>
                 </div>
 
                 <div style="color: #18930f;" id="success-message"></div>
                 <div class="btn-block">
-                    <button id="submit-equiry " onclick="sendContactForm();">Send Enquiry</button>
+                    <button type="submit" id="submit-equiry">Send Enquiry</button>
                 </div>
             </form>
         </div>
@@ -1415,7 +1423,7 @@
 
         </div> <!-- /#maincontentcontainer -->
     </body>
-    <script>
+    <!-- <script>
 
         function sendContactForm() {
 
@@ -1453,6 +1461,6 @@
             }).then((message) => (alert("Mail Successfully Sent To US")));
         }
 
-    </script>
+    </script> -->
 
 </html>
